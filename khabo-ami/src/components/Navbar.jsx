@@ -75,7 +75,7 @@ const Navbar = () => {
           </div>
           <a href="/">
             {/* <img src={logo} alt="" className="h-[5em] w-[6em]" /> */}
-            <span className="text-white font-extrabold bg-green px-[5px]  rounded text-2xl  lg:text-4xl">K</span>
+            <span className="text-white font-extrabold bg-green px-[5px]  rounded-lg text-2xl  lg:text-4xl">K</span>
             <span className="font-extrabold text-xl lg:text-3xl"> habo Ami</span>
           </a>
         </div>
