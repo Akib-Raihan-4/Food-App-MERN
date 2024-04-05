@@ -5,7 +5,91 @@ import bFood1Img from "/home/b-food1.png";
 const Banner = () => {
   return (
     <div className="section-container bg-gradient-to-r from-[#FAFAFA] from-0% to [#FCFCFC] to-100%">
-      <div className="py-24 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div className="py-24 flex flex-col md:flex-row-reverse justify-between items-center gap-8">
+        {/* Image Side */}
+        <div className="md:w-1/2">
+          <img src={bannerImg} alt="" />
+          <div className="flex flex-col md:flex-row items-center justify-around -mt-14 gap-4">
+            {/* First card for banner*/}
+            <div className="flex bg-white py-2 px-3 rounded-2xl items-center gap-3 shadow-md w-64">
+              {/* Image */}
+              <img src={bFood1Img} alt="" className="rounded-2xl" />
+              {/* Price and stars */}
+              <div className="space-y-1">
+                <h5 className="font-medium mb-1">Spicy noodles</h5>
+                <div className="rating rating-sm">
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-green"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-green"
+                  
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-green"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-green"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-green"
+                  />
+                </div>
+                <p className="text-red">$18.00</p>
+              </div>
+            </div>
+            {/* Second card */}
+            <div className="hidden md:flex bg-white py-2 px-3 rounded-2xl items-center gap-3 shadow-md w-64">
+              {/* Image */}
+              <img src={bFood1Img} alt="" className="rounded-2xl" />
+              {/* Price and stars */}
+              <div className="space-y-1">
+                <h5 className="font-medium mb-1">Spicy noodles</h5>
+                <div className="rating rating-sm">
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-green"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-green"
+                  
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-green"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-green"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-green"
+                  />
+                </div>
+                <p className="text-red">$18.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         {/* Texts side */}
         <div className="md:w-1/2 space-y-7 px-4">
           <h2 className="md:text-5xl text-4xl font-bold md:leading-snug text-black">
@@ -20,15 +104,7 @@ const Banner = () => {
             Order Now
           </button>
         </div>
-        {/* Image Side */}
-        <div className="md:w-1/2">
-          <img src={bannerImg} alt="" />
-          <div>
-            <div>
-              <img src={bFood1Img} alt="" className="rounded-2xl"/>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   );
