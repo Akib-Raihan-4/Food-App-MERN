@@ -5,7 +5,7 @@ import '../App.css';
 
 const Main = () => {
   return (
-    <div>
+    <div className='h-[10000px]'>
       <Navbar/>
       <Outlet/>
       <footer>Footer</footer>
