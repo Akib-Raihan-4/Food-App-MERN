@@ -11,7 +11,7 @@ const Cards = ({ item }) => {
   return (
     <div>
       <div className="card w-96 bg-base-100 shadow-xl">
-        <div className={`rating gap-1 absolute right-2 top-2 p-4 hearStar bg-green`}>
+        <div className={`rating gap-1 absolute right-2 top-2 p-4 heartStar bg-green ${isHeartFilled ? "text-rose-500": "text-white"}`} onClick={handleHeartClick}>
             <FaHeart className="h-5 w-5 cursor-pointer"/>
         </div>
         <Link to={`/menu/${item._id}`}>
