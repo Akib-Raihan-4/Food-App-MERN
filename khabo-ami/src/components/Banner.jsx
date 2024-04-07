@@ -10,7 +10,7 @@ const Banner = () => {
         <div className="md:w-1/2">
           <img src={bannerImg} alt="" />
           <div className="flex flex-col md:flex-row items-center justify-around -mt-14 gap-4">
-            {/* First card for banner*/}
+            {/* First small card for banner*/}
             <div className="flex bg-white py-2 px-3 rounded-2xl items-center gap-3 shadow-md w-64">
               {/* Image */}
               <img src={bFood1Img} alt="" className="rounded-2xl" />
@@ -48,7 +48,7 @@ const Banner = () => {
                 <p className="text-red">$18.00</p>
               </div>
             </div>
-            {/* Second card */}
+            {/* Second small card */}
             <div className="hidden md:flex bg-white py-2 px-3 rounded-2xl items-center gap-3 shadow-md w-64">
               {/* Image */}
               <img src={bFood1Img} alt="" className="rounded-2xl" />
@@ -58,28 +58,28 @@ const Banner = () => {
                 <div className="rating rating-sm">
                   <input
                     type="radio"
-                    name="rating-4"
+                    name="rating-1"
                     className="mask mask-star-2 bg-green"
                   />
                   <input
                     type="radio"
-                    name="rating-4"
+                    name="rating-1"
                     className="mask mask-star-2 bg-green"
                   
                   />
                   <input
                     type="radio"
-                    name="rating-4"
+                    name="rating-1"
                     className="mask mask-star-2 bg-green"
                   />
                   <input
                     type="radio"
-                    name="rating-4"
+                    name="rating-1"
                     className="mask mask-star-2 bg-green"
                   />
                   <input
                     type="radio"
-                    name="rating-4"
+                    name="rating-1"
                     className="mask mask-star-2 bg-green"
                   />
                 </div>

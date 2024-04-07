@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -38,6 +38,13 @@ const SpecialDishes = () => {
       },
     ],
   };
+
+  const [recipes, setRecipes] = useState([]);
+  const slider = React.useRef(null)
+
+  useEffect(()=>{
+    fetch("/menu.json").then(res => res.json()).then(data => {console.log(data)})
+  },[])
 
   return (
     <div className="section-container my-20">
