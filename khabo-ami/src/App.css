@@ -17,7 +17,7 @@ header{
 }
 
 .title{
-  @apply text-4xl md:text-5xl font-bold my-2 md:leading-snug leading-snug;
+  @apply text-4xl md:text-5xl font-bold my-2 md:leading-snug leading-snug text-black;
 }
 
 .heartStar{
